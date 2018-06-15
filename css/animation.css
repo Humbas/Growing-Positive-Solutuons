@@ -1,0 +1,164 @@
+
+@keyframes movingclouds {
+	0% {margin-left: 80%;}
+	100% {margin-left: -120%;}
+}
+
+
+/*bubbles*/
+
+@keyframes greenPulse {
+  0% {box-shadow:0 0 30px #4bbec8}
+  50% {box-shadow:0 0 30px #4bbec8}
+  100% {box-shadow:0 0 30px #4bbec8}
+}
+
+@keyframes bubbleUp {
+ 0% {bottom:110px;-webkit-transform:scale(.3);opacity:0}
+  1% {bottom:110px;-webkit-transform:scale(.3);opacity:0}
+  30% {bottom:110px;-webkit-transform:scale(.8);opacity:1}
+  95% {bottom:245px;-webkit-transform:scale(.3);opacity:1}
+  99% {bottom:150px;-webkit-transform:scale(.2);opacity:0}
+  100% {bottom:110px;-webkit-transform:scale(.9);opacity:0}
+}
+
+#beaker span.bubble {
+background: #fff 28% 100% no-repeat fixed;
+ width:40px;
+  height:40px;
+  display:block;
+  left:40%;
+  top:80%x;
+  border-radius:100px; 
+  background:-moz-radial-gradient(center 45deg, circle closest-corner, rgba(75,190,200,0), rgba(75,190,200,.1), rgba(75,190,200,.3), rgba(255,255,255,.7));
+  background:-webkit-gradient(radial, center center, 0, center center, 100, from(rgba(75,190,200,.2)), to(rgba(255,255,255,.7)));
+  background:gradient(center 45deg, circle closest-corner, rgba(75,190,200,0), rgba(75,190,200,.1), rgba(75,190,200,.3), rgba(255,255,255,.7));
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(9,133,167,0.1) 51%, rgba(9,133,167,0.3) 71%, rgba(9,133,167,.7) 100%);
+  animation:bubbleUp 4s infinite ease-in-out;
+  -webkit-animation:bubbleUp 4s infinite ease-in-out;
+  -o-animation:bubbleUp 4s infinite ease-in-out;
+  -moz-animation:bubbleUp 4s infinite ease-in-out;
+}
+
+
+
+		/*flying leaf*/	 
+		 
+		 @keyframes leafanimation {
+         0% {transform:translate(900px,500px) rotate(0deg); color:rgba(255,0,0,0);}
+        20% {transform:translate(850px,450px) rotate(360deg); color:rgba(255,0,0,0);}
+        40% {transform:translate(450px,200px) rotate(720deg); color:rgba(255,0,0,0);}
+        60% {transform:translate(100px,100px) rotate(1080deg); color:rgba(255,0,0,0);}
+        80% {transform:translate(0,0) rotate(1440deg); color:rgba(255,0,0,0);}
+       100% {transform:translate(12px,20px) rotate(1440deg); color:rgba(255,0,0,1);}
+}
+
+.flyingleaf {
+position:absolute; 
+top:-100px;
+left:-100px;
+height: 40px;
+line-height: 40px;
+font-size: 36px;
+color: rgb(255,0,0);
+animation: leafanimation 6s linear;
+}
+
+
+
+		/*palmtree movements*/	 
+
+    @-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(8deg);}
+    50%{-webkit-transform: rotate(7deg)}
+    100%{-webkit-transform: rotate(8deg);}
+    }
+    @keyframes swinging{
+    0%{transform: rotate(8deg);}
+    50%{transform: rotate(7deg)}
+    100%{transform: rotate(8deg);}
+    }
+	
+	 @-webkit-keyframes rswinging{
+    0%{-webkit-transform: rotate(6deg);}
+    50%{-webkit-transform: rotate(5deg)}
+    100%{-webkit-transform: rotate(6deg);}
+    }
+    @keyframes rswinging{
+    0%{transform: rotate(6deg);}
+    50%{transform: rotate(5deg)}
+    100%{transform: rotate(6deg);}
+    }
+	
+	 @-webkit-keyframes sswinging{
+    0%{-webkit-transform: rotate(2deg);}
+    50%{-webkit-transform: rotate(3deg)}
+    100%{-webkit-transform: rotate(2deg);}
+    }
+    @keyframes sswinging{
+    0%{transform: rotate(2deg);}
+    50%{transform: rotate(3deg)}
+    100%{transform: rotate(2deg);}
+    }
+	
+	 @keyframes sswingingz{
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(4deg)}
+    100%{transform: rotate(5deg);}
+    }
+  
+  
+  
+	
+	.discountimager,
+    .discountimage,
+	.discountimages,
+	.discountimagez{
+	 left:1%;
+	 -webkit-transform-origin: 15% 0;
+    transform-origin: 15% 0;
+  
+}
+
+.discountimage{
+  -webkit-animation: swinging 5.5s ease-in-out forwards infinite;
+   animation: swinging 5.5s ease-in-out forwards infinite;
+    top:1%;	
+
+}
+
+.discountimager{
+    -webkit-animation: rswinging 8.5s ease-in-out forwards infinite;
+    animation: rswinging 8.5s ease-in-out forwards infinite;	
+	 top:1%;
+
+}
+
+
+.discountimages{
+    -webkit-animation: sswinging 6.5s ease-in-out forwards infinite;
+    animation: sswinging 6.5s ease-in-out forwards infinite;	
+	 top:1%;
+	
+}
+
+
+.discountimagez{
+    -webkit-animation: sswingingz 4.5s ease-in-out forwards infinite;
+    animation: sswingingz 4.5s ease-in-out forwards infinite;	
+	 top:0%;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

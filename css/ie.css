@@ -1,0 +1,24 @@
+
+   
+ .home, .print, .data, .ware, .promotional, .sponsorship, .contact {
+	 height:50px; 
+	 background-repeat:no-repeat;
+	 width:150px;
+	 z-index:1;
+	}
+
+.home:hover, .selected .home{background: url('../images/links/home_hover.png'); z-index:2;}
+   
+.print:hover, .selected .print{background: url('../images/links/print_hover.png');}
+	
+.data:hover, .selected .data{background: url('../images/links/data_hover.png');	}
+	
+.ware:hover, .selected .ware{background: url('../images/links/warehouse_hover.png');	}
+	
+.promotional:hover, .selected .promotional{background: url('../images/links/promotional_hover.png');}
+	
+.sponsorship:hover, .selected .sponsorship{background: url('../images/links/sponsorship_hover.png');}
+	
+.contact:hover, .selected .contact{background: url('../images/links/contact_hover.png');}
+	
+

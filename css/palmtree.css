@@ -1,0 +1,70 @@
+html,body{
+   background:#5ea8f7;
+}
+.wrapper{
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  width:900px;
+  background: transparent;
+}
+
+/*animate*/
+
+@keyframes shake3{
+   0% {transform:rotate(0deg);transform-origin:90% 2%;}
+  
+  50%{transform: rotate(5deg);transform-origin:90% 2%;}
+ 
+  100%{transform:rotate(0deg);transform-origin:90% 2%;}
+}
+
+@keyframes shake1{
+   0% {transform:rotate(0deg) translate(36px, 6px);}
+  
+  50%{transform: rotate(2deg) translate(36px, 6px);}
+ 
+  100%{transform:rotate(0deg) translate(36px, 6px);}
+}
+
+@keyframes shake2{
+   0% {transform:rotate(0deg) translate(74px, 2px);}
+  
+  50%{transform: rotate(-2deg) translate(74px, 2px);}
+ 
+  100%{transform:rotate(0deg) translate(74px, 2px);}
+}
+
+
+svg{
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  width:100%;
+}
+
+#tronco {
+  transform: translate(55px,8px);
+}
+#palm_leaf_2{
+  transform:translate(74px, 2px);
+}
+#palm_leaf_1{
+  transform:translate(36px, 6px);
+}
+
+#palmtree1 #palm_leaf_2{
+  animation: shake2 3s ease-out;
+  animation-iteration-count:infinite;
+}
+#palmtree1 #palm_leaf_1{
+  animation: shake1 3s ease-out;
+  animation-iteration-count:infinite;
+  
+}
+/*no translate*/
+#palmtree1 #palm_leaf_3 {
+  animation: shake3 3s ease-out;
+  animation-iteration-count:infinite;
+}
+
